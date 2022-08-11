@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://zhuhaoxlj.github.io/archives/index.html</loc>
-    
-    <lastmod>2022-08-11T13:19:39.357Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhuhaoxlj.github.io/about/index.html</loc>
     
     <lastmod>2022-08-11T13:19:39.357Z</lastmod>
@@ -86,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://zhuhaoxlj.github.io/categories/index.html</loc>
+    <loc>https://zhuhaoxlj.github.io/archives/index.html</loc>
     
     <lastmod>2022-08-11T13:19:39.357Z</lastmod>
     
@@ -94,6 +87,13 @@
   
   <url>
     <loc>https://zhuhaoxlj.github.io/tags/index.html</loc>
+    
+    <lastmod>2022-08-11T13:19:39.357Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhuhaoxlj.github.io/categories/index.html</loc>
     
     <lastmod>2022-08-11T13:19:39.357Z</lastmod>
     
