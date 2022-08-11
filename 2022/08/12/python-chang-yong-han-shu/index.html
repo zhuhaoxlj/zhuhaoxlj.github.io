@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Matlab 常用操作, ECNU NLP DeepLearning AntNLP MarkGosling godweiyang WeiYang 机器视觉 深度学习 算法码上来">
+    <meta name="keywords" content="Python 常用函数, ECNU NLP DeepLearning AntNLP MarkGosling godweiyang WeiYang 机器视觉 深度学习 算法码上来">
     <meta name="description" content="淮阴师范学院 | 计算机科学与技术 | 机器视觉">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Matlab 常用操作 | MarkGosling的博客</title>
+    <title>Python 常用函数 | MarkGosling的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://markgosling.oss-cn-beijing.aliyuncs.com/img/202208120107690.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Matlab 常用操作</h1>
+                    <h1 class="description center-align post-title">Python 常用函数</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Matlab/">
-                                <span class="chip bg-color">Matlab</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
-                            <a href="/tags/数学建模/">
-                                <span class="chip bg-color">数学建模</span>
+                            <a href="/tags/Python-常用函数/">
+                                <span class="chip bg-color">Python 常用函数</span>
                             </a>
                         
                     </div>
@@ -448,8 +448,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Matlab/" class="post-category">
-                                Matlab
+                            <a href="/categories/Python/" class="post-category">
+                                Python
                             </a>
                         
                     </div>
@@ -492,103 +492,124 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="MATLAB常用操作"><a href="#MATLAB常用操作" class="headerlink" title="MATLAB常用操作"></a>MATLAB常用操作</h1><h2 id="产生一个a至b之间的随机矩阵-大小为1x5"><a href="#产生一个a至b之间的随机矩阵-大小为1x5" class="headerlink" title="产生一个a至b之间的随机矩阵,大小为1x5"></a>产生一个a至b之间的随机矩阵,大小为1x5</h2><pre class="line-numbers language-matlab"><code class="language-matlab">a <span class="token operator">+</span> <span class="token punctuation">(</span>b <span class="token operator">-</span> a<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token function">rand</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4"><a href="#产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4" class="headerlink" title="产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4"></a>产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token function">normrnd</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="roundn—任意位置四舍五入"><a href="#roundn—任意位置四舍五入" class="headerlink" title="roundn—任意位置四舍五入"></a>roundn—任意位置四舍五入</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 0个位 1十位  2百位 -1小数点后一位  </span>
-a <span class="token operator">=</span> <span class="token number">3.1415</span>
-<span class="token function">roundn</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">% ans   =  3.1400</span>
-<span class="token function">roundn</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true">% ans   =  0</span>
-a <span class="token operator">=</span><span class="token number">31415</span>
-<span class="token function">roundn</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">% ans  = 31400</span>
-<span class="token function">roundn</span><span class="token punctuation">(</span><span class="token number">5.5</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">%6</span>
-<span class="token function">roundn</span><span class="token punctuation">(</span><span class="token number">5.5</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">%10</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="方差"><a href="#方差" class="headerlink" title="方差"></a>方差</h2><pre class="line-numbers language-matlab"><code class="language-matlab">A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token function">var</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="样本方差"><a href="#样本方差" class="headerlink" title="样本方差"></a>样本方差</h2><pre class="line-numbers language-matlab"><code class="language-matlab">A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token function">var</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="标准差"><a href="#标准差" class="headerlink" title="标准差"></a>标准差</h2><pre class="line-numbers language-matlab"><code class="language-matlab">A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token function">std</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="数组元素求和"><a href="#数组元素求和" class="headerlink" title="数组元素求和"></a>数组元素求和</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 求数组每一列的和</span>
-<span class="token function">sum</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">% 求数组每一行的和</span>
-<span class="token function">sum</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="数组元素的乘积"><a href="#数组元素的乘积" class="headerlink" title="数组元素的乘积"></a>数组元素的乘积</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 求数组每一列元素相乘的结果</span>
-<span class="token function">prod</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">% 求数组每一行元素相乘的结果</span>
-<span class="token function">prod</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="按列归一化"><a href="#按列归一化" class="headerlink" title="按列归一化"></a>按列归一化</h2><p>每一列的每一个元素除以这一列的和</p>
-<h2 id="求矩阵列向量间的相关系数矩阵"><a href="#求矩阵列向量间的相关系数矩阵" class="headerlink" title="求矩阵列向量间的相关系数矩阵"></a>求矩阵列向量间的相关系数矩阵</h2><pre class="line-numbers language-matlab"><code class="language-matlab">r <span class="token operator">=</span> <span class="token function">corrcoef</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<blockquote>
-<p><strong><em>\</em>param:**</strong></p>
-<p>　　X：这个矩阵X的每一列看做一个向量</p>
-<p><strong><em>\</em>return：**</strong></p>
-<p>　　r： 相关系数矩阵。返回每两列之间的相关系数组成的矩阵，对称阵，对角为方差，一个向量的方差就是对向量的每个数求var。</p>
-<p>　　注意使用时不必对设计阵做标准化处理。因为我们实际要求的是标准化变量的协方差矩阵，而就是原设计阵的相关系数矩阵。</p>
+                <h1 id="🔧-函数用法"><a href="#🔧-函数用法" class="headerlink" title="🔧 函数用法"></a>🔧 函数用法</h1><h2 id="split"><a href="#split" class="headerlink" title="split()"></a>split()</h2><blockquote>
+<p>通过指定字符对字符串进行分割，以列表的形式返回</p>
 </blockquote>
-<h2 id="层次分析法"><a href="#层次分析法" class="headerlink" title="层次分析法"></a>层次分析法</h2><p> RI</p>
-<pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 这里n=2时，一定是一致矩阵，所以CI = 0，我们为了避免分母为0，将这里的第二个元素改为了很接近0的正数</span>
-RI<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">0</span> <span class="token number">0.0001</span> <span class="token number">0.52</span> <span class="token number">0.89</span> <span class="token number">1.12</span> <span class="token number">1.26</span> <span class="token number">1.36</span> <span class="token number">1.41</span> <span class="token number">1.46</span> <span class="token number">1.49</span> <span class="token number">1.52</span> <span class="token number">1.54</span> <span class="token number">1.56</span> <span class="token number">1.58</span> <span class="token number">1.59</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="求矩阵最大特征值"><a href="#求矩阵最大特征值" class="headerlink" title="求矩阵最大特征值"></a>求矩阵最大特征值</h3><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">%% 求A的特征向量构成V的列向量，求矩阵A的全部特征值，构成对角阵D</span>
-<span class="token punctuation">[</span>V<span class="token punctuation">,</span>D<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">eig</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">;</span>
-Max_eig <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">max</span><span class="token punctuation">(</span>D<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="判断矩阵是否是正互反矩阵"><a href="#判断矩阵是否是正互反矩阵" class="headerlink" title="判断矩阵是否是正互反矩阵"></a>判断矩阵是否是正互反矩阵</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token keyword">function</span> flag <span class="token operator">=</span> <span class="token function">isRM</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true">% 是否是正互反矩阵的标志变量</span>
-    flag <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token function">all</span><span class="token punctuation">(</span><span class="token function">diag</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token function">A</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">)</span><span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span>
-        <span class="token keyword">for</span> <span class="token number">i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token function">size</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-            <span class="token keyword">for</span> <span class="token number">j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token function">size</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">A</span><span class="token punctuation">(</span><span class="token number">i</span><span class="token punctuation">,</span><span class="token number">j</span><span class="token punctuation">)</span><span class="token operator">~=</span><span class="token number">1</span><span class="token operator">/</span><span class="token function">A</span><span class="token punctuation">(</span><span class="token number">j</span><span class="token punctuation">,</span><span class="token number">i</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    flag <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-                <span class="token keyword">end</span>
-            <span class="token keyword">end</span>
-        <span class="token keyword">end</span>
-    <span class="token keyword">else</span>
-        flag <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token keyword">end</span>
-    <span class="token keyword">if</span> flag<span class="token operator">==</span><span class="token number">1</span>
-        <span class="token function">disp</span><span class="token punctuation">(</span><span class="token string">'该矩阵是正互反矩阵'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">else</span>
-        <span class="token function">disp</span><span class="token punctuation">(</span><span class="token string">'该矩阵不是正互反矩阵'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">end</span>
-<span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="获取矩阵的对角元素"><a href="#获取矩阵的对角元素" class="headerlink" title="获取矩阵的对角元素"></a>获取矩阵的对角元素</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 返回包含主对角线上向量A的元素的对角矩阵</span>
-<span class="token function">diag</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="创建对角矩阵"><a href="#创建对角矩阵" class="headerlink" title="创建对角矩阵"></a>创建对角矩阵</h2><pre class="line-numbers language-matlab"><code class="language-matlab">v <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span> <span class="token number">1</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">-</span><span class="token number">2</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">% 使用 diag 创建一个包含 v 在主对角线上的元素的矩阵。</span>
-D <span class="token operator">=</span> <span class="token function">diag</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h1 id="相关性模型"><a href="#相关性模型" class="headerlink" title="相关性模型"></a>相关性模型</h1><h2 id="描述性统计"><a href="#描述性统计" class="headerlink" title="描述性统计"></a>描述性统计</h2><pre><code></code></pre><h1 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h1><h2 id="求解析解"><a href="#求解析解" class="headerlink" title="求解析解"></a>求解析解</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=2*x'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">% 这里要指定自变量为x</span>
-<span class="token comment" spellcheck="true">% 2*x + C1*exp(x) + 2  (这里的C1表示任意常数，有时候也会出现C2 C3等)</span>
-<span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=2*x'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">% 如果不指定自变量的话，会默认自变量为t，x会看成一个常数</span>
-<span class="token comment" spellcheck="true">% 2*x + C2*exp(t)</span>
-
-<span class="token comment" spellcheck="true">%% 如果微分方程中还有其他的未知参数</span>
-<span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=a*x'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">% a是一个未知的参数</span>
-
-<span class="token comment" spellcheck="true">%% 如果微分方程有已知条件 y(0)=3</span>
-<span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=2*x'</span><span class="token punctuation">,</span><span class="token string">'y(0)=3'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">%% 如果微分方程已知多个条件</span>
-<span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'D2y+4*Dy+29*y=0'</span><span class="token punctuation">,</span><span class="token string">'y(0)=0,Dy(0)=15'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="求数值解"><a href="#求数值解" class="headerlink" title="求数值解"></a>求数值解</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token function">ode45</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><ul>
-<li><p>量纲不同的数据要进行标准化，消除不同指标量纲的影响</p>
+<pre class="line-numbers language-Python"><code class="language-Python"># str 分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等。
+# num 分割次数。默认为 -1, 即分隔所有。
+word.split(str,num)
+# split()默认通过空格分割
+ls = s.split()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="replace-字符串替换"><a href="#replace-字符串替换" class="headerlink" title="replace() 字符串替换"></a>replace() 字符串替换</h2><h3 id="字符串去掉空格"><a href="#字符串去掉空格" class="headerlink" title="字符串去掉空格"></a>字符串去掉空格</h3><blockquote>
+<p>注意替换后的字符串不会赋值给原字符串，要通过<code>=</code>赋值给原字符串</p>
+</blockquote>
+<pre class="line-numbers language-Python"><code class="language-Python">str = "Hello World"
+str = str.replace(" ","")
+print(str)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>输出：HelloWorld</p>
+</blockquote>
+<h2 id="format-函数的槽机制"><a href="#format-函数的槽机制" class="headerlink" title="format()函数的槽机制"></a>format()函数的槽机制</h2><h3 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h3><pre class="line-numbers language-Python"><code class="language-Python"># "模板字符串".format(<逗号分隔的参数>)
+print("今天是{}年{}月{}日".format("2022","4",22)) #数字加不加引号都可以，字符串需要加
+# !!! 槽的序号要么全部加上要么一个都不加
+# 添加参数之后就可以指定每个槽对应的参数序号
+print("今天是{2}年{0}月{1}日".format("2022","4",22)) #数字加不加引号都可以，字符串需要加
+# 今天是2022年3月17日<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="格式控制"><a href="#格式控制" class="headerlink" title="格式控制"></a>格式控制</h3><blockquote>
+<p>槽除了包括参数序号,还可以包括格式控制信息：</p>
+</blockquote>
+<p>槽的内部格式：</p>
+<p><img src="https://lgxdn7v4u2.feishu.cn/space/api/box/stream/download/asynccode/?code=MTcxMDFkN2FhZDc2YzYzMzQ2ZjAzMzk5NGFjZjgzMDhfaW91QzA2bndTekhQbnMxRERrS1pqZkl4akExRXdFeTRfVG9rZW46Ym94Y244NkY3OGpvajdDYVNsRzFXRXR6QmhkXzE2NjAyMzc3NTI6MTY2MDI0MTM1Ml9WNA" alt="img"></p>
+<p>{ &lt;参数序号&gt; : &lt;格式控制标记&gt; }</p>
+<h3 id="槽内部对格式化的配置方式"><a href="#槽内部对格式化的配置方式" class="headerlink" title="槽内部对格式化的配置方式"></a>槽内部对格式化的配置方式</h3><p> { &lt; 参数序号 &gt; : &lt; 格式控制标记 &gt; }</p>
+<p> 格式控制标记包括&lt;填充&gt;、&lt;对齐&gt;、&lt;宽度&gt;、&lt;,&gt;、&lt;.精度&gt;、&lt;类型&gt;6个字段，都是可选的，可以组合使用</p>
+<pre class="line-numbers language-Python"><code class="language-Python">n = 5
+for i in range(1, n + 1, 2):
+ # {}中的0为format参数中第一个参数也就是i个*号，{0:^{2}}也就是对format参数中第一个参数的字符串进行格式化，格式化控制标记就是^{2},其中{2}就是format中的第三个参数也就是空格填充，居中对齐，槽设定的输出宽度为n
+ print("{0:^{2}}".format('*' * i, 100, n))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="eval"><a href="#eval" class="headerlink" title="eval()"></a>eval()</h2><blockquote>
+<p>字符串转数字</p>
+</blockquote>
+<pre class="line-numbers language-Python"><code class="language-Python">print(eval('1.2')+1)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>输出：2.2</p>
+</blockquote>
+<h3 id="eval-函数通过字符串调用函数"><a href="#eval-函数通过字符串调用函数" class="headerlink" title="eval() 函数通过字符串调用函数"></a>eval() 函数通过字符串调用函数</h3><pre class="line-numbers language-Python"><code class="language-Python">def add(a,b):
+return a+b
+print(eval("add(1,2)"))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="eval-同时输入多个变量"><a href="#eval-同时输入多个变量" class="headerlink" title="eval()同时输入多个变量"></a>eval()同时输入多个变量</h3><blockquote>
+<p>输入</p>
+<p>1,2,3</p>
+</blockquote>
+<pre class="line-numbers language-Python"><code class="language-Python">a, b, c = eval(input())
+print(a)
+print(b)
+print(c)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>输出</p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+</blockquote>
+<h2 id="arg1-arg2-arg3…-函数接受无限制数量的参数"><a href="#arg1-arg2-arg3…-函数接受无限制数量的参数" class="headerlink" title="(arg1,arg2,arg3…)函数接受无限制数量的参数"></a>(arg1,arg2,arg3…)函数接受无限制数量的参数</h2><p>其中b在函数中表达除了a以为剩下的所有的输入参数</p>
+<blockquote>
+<p>第一个参数照常输入，以后的所有参数都输入到<code>*b</code>中</p>
+</blockquote>
+<pre class="line-numbers language-Python"><code class="language-Python">def cmul(a,*b):
+ m = a
+ for i in b:
+     m*=i
+ return m
+print(eval("cmul({})".format(input())))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="输入示例1"><a href="#输入示例1" class="headerlink" title="输入示例1"></a>输入示例1</h3><p> 1,2,3,4</p>
+<p>输出示例1</p>
+<p> 24</p>
+<h2 id="random-randint-参数1，参数2-随机数"><a href="#random-randint-参数1，参数2-随机数" class="headerlink" title="random.randint(参数1，参数2) 随机数"></a>random.randint(参数1，参数2) 随机数</h2><ul>
+<li><p>参数1、参数2必须是整数</p>
 </li>
-<li><p>代码开始记得加clear，clc初始化</p>
+<li><p>函数返回参数1和参数2之间的任意整数， 闭区间</p>
 </li>
 </ul>
+<blockquote>
+<p>注意引用头文件</p>
+</blockquote>
+<pre class="line-numbers language-Python"><code class="language-Python"> import random
+ # [1,2]
+ random.randint(1,2)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="字符串截取-切片"><a href="#字符串截取-切片" class="headerlink" title="字符串截取 切片[::]"></a>字符串截取 切片[::]</h2><p> string = ‘12345’</p>
+<blockquote>
+<p>格式：字符串[A:B:step]。方括号中有3个位置可填写整数，它们是A，B，step.</p>
+<p>step不填时，默认值为1</p>
+<p>比如：</p>
+<p>string[0:-1] 结果为 1234</p>
+<p>0也可以省略，写成string[:-1]</p>
+<p>当step&gt;0或step&lt;0时，其他参数省略后对应的默认值见下表：</p>
+</blockquote>
+<pre class="line-numbers language-Python"><code class="language-Python"> s = "12345"
+ print(s[::])
+ # 倒序输出的时候，切片的第三个参数一定要写-1
+ print(s[-1:-6:-1])
+ # 可以简写为
+ print(s[::-1])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>输出：</p>
+<p>12345</p>
+<p>54321</p>
+<p>54321</p>
+</blockquote>
 <ul>
-<li><p>批量生成变量</p>
-<pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 批量生成变量</span>
-<span class="token keyword">for</span> <span class="token number">i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token number">10</span>
-   generateVar <span class="token operator">=</span> <span class="token function">strcat</span><span class="token punctuation">(</span><span class="token string">'w'</span><span class="token punctuation">,</span><span class="token function">num2str</span><span class="token punctuation">(</span><span class="token number">i</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'='</span><span class="token punctuation">,</span><span class="token function">num2str</span><span class="token punctuation">(</span><span class="token number">i</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-   <span class="token function">eval</span><span class="token punctuation">(</span>generateVar<span class="token punctuation">)</span>
-<span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<li><p>python切片是左闭右开</p>
+</li>
+<li><p>s[:-1]也就是说倒数第一个字符截取不ß到</p>
 </li>
 </ul>
-<ul>
-<li>plot绘制多个图形的时候加上figure(n)标签，防止前面的被覆盖</li>
-<li></li>
-</ul>
+<pre class="line-numbers language-Python"><code class="language-Python"> s = "1234"
+ print(s[:-1])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>输出</p>
+<p>123</p>
+</blockquote>
+<h1 id="🔔-注意事项"><a href="#🔔-注意事项" class="headerlink" title="🔔 注意事项"></a>🔔 注意事项</h1><p> cnNumber = “零一二三四五六七八九” number = input() for i in number:     # !!! 在通过字符串数字获取数组元素的时候，要通过eval把字符串转为数字     print(cnNumber[eval(i)],end=””)</p>
 
                 
             </div>
@@ -615,7 +636,7 @@ D <span class="token operator">=</span> <span class="token function">diag</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhuhaoxlj.github.io/2022/08/12/matlab-chang-yong-cao-zuo/">https://zhuhaoxlj.github.io/2022/08/12/matlab-chang-yong-cao-zuo/</a>
+                    <a href="https://zhuhaoxlj.github.io/2022/08/12/python-chang-yong-han-shu/">https://zhuhaoxlj.github.io/2022/08/12/python-chang-yong-han-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -653,12 +674,12 @@ D <span class="token operator">=</span> <span class="token function">diag</span>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Matlab/">
-                                    <span class="chip bg-color">Matlab</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
-                                <a href="/tags/数学建模/">
-                                    <span class="chip bg-color">数学建模</span>
+                                <a href="/tags/Python-常用函数/">
+                                    <span class="chip bg-color">Python 常用函数</span>
                                 </a>
                             
                         </div>
@@ -828,82 +849,18 @@ D <span class="token operator">=</span> <span class="token function">diag</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/08/12/gradle-zhu-yi-shi-xiang/">
+                <a href="/2022/08/12/python-chang-yong-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Gradle 注意事项">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Python 常用函数">
                         
-                        <span class="card-title">Gradle 注意事项</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-12
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Gradle/" class="post-category">
-                                    Gradle
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
-                    </a>
-                    
-                    <a href="/tags/Gradle/">
-                        <span class="chip bg-color">Gradle</span>
-                    </a>
-                    
-                    <a href="/tags/JDK/">
-                        <span class="chip bg-color">JDK</span>
-                    </a>
-                    
-                    <a href="/tags/Android-Gradle-Plugin/">
-                        <span class="chip bg-color">Android Gradle Plugin</span>
-                    </a>
-                    
-                    <a href="/tags/Build-Tools/">
-                        <span class="chip bg-color">Build Tools</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/08/12/python-cheng-xu-da-bao-cheng-exe-ke-zhi-xing-wen-jian/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Python程序打包成.exe可执行文件">
-                        
-                        <span class="card-title">Python程序打包成.exe可执行文件</span>
+                        <span class="card-title">Python 常用函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -928,6 +885,7 @@ D <span class="token operator">=</span> <span class="token function">diag</span>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -935,12 +893,60 @@ D <span class="token operator">=</span> <span class="token function">diag</span>
                         <span class="chip bg-color">Python</span>
                     </a>
                     
-                    <a href="/tags/程序打包/">
-                        <span class="chip bg-color">程序打包</span>
+                    <a href="/tags/Python-常用函数/">
+                        <span class="chip bg-color">Python 常用函数</span>
                     </a>
                     
-                    <a href="/tags/exe可执行文件/">
-                        <span class="chip bg-color">exe可执行文件</span>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/12/adb-chang-yong-cao-zuo/">
+                    <div class="card-image">
+                        
+                        <img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202208120058624.png" class="responsive-img" alt="adb 常用操作">
+                        
+                        <span class="card-title">adb 常用操作</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/adb/" class="post-category">
+                                    adb
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Android/">
+                        <span class="chip bg-color">Android</span>
+                    </a>
+                    
+                    <a href="/tags/adb/">
+                        <span class="chip bg-color">adb</span>
                     </a>
                     
                 </div>

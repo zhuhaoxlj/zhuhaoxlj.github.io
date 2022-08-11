@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Python 常用函数</title>
+      <link href="/2022/08/12/python-chang-yong-han-shu/"/>
+      <url>/2022/08/12/python-chang-yong-han-shu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="🔧-函数用法"><a href="#🔧-函数用法" class="headerlink" title="🔧 函数用法"></a>🔧 函数用法</h1><h2 id="split"><a href="#split" class="headerlink" title="split()"></a>split()</h2><blockquote><p>通过指定字符对字符串进行分割，以列表的形式返回</p></blockquote><pre class="line-numbers language-Python"><code class="language-Python"># str 分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等。# num 分割次数。默认为 -1, 即分隔所有。word.split(str,num)# split()默认通过空格分割ls = s.split()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="replace-字符串替换"><a href="#replace-字符串替换" class="headerlink" title="replace() 字符串替换"></a>replace() 字符串替换</h2><h3 id="字符串去掉空格"><a href="#字符串去掉空格" class="headerlink" title="字符串去掉空格"></a>字符串去掉空格</h3><blockquote><p>注意替换后的字符串不会赋值给原字符串，要通过<code>=</code>赋值给原字符串</p></blockquote><pre class="line-numbers language-Python"><code class="language-Python">str = "Hello World"str = str.replace(" ","")print(str)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>输出：HelloWorld</p></blockquote><h2 id="format-函数的槽机制"><a href="#format-函数的槽机制" class="headerlink" title="format()函数的槽机制"></a>format()函数的槽机制</h2><h3 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h3><pre class="line-numbers language-Python"><code class="language-Python"># "模板字符串".format(<逗号分隔的参数>)print("今天是{}年{}月{}日".format("2022","4",22)) #数字加不加引号都可以，字符串需要加# !!! 槽的序号要么全部加上要么一个都不加# 添加参数之后就可以指定每个槽对应的参数序号print("今天是{2}年{0}月{1}日".format("2022","4",22)) #数字加不加引号都可以，字符串需要加# 今天是2022年3月17日<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="格式控制"><a href="#格式控制" class="headerlink" title="格式控制"></a>格式控制</h3><blockquote><p>槽除了包括参数序号,还可以包括格式控制信息：</p></blockquote><p>槽的内部格式：</p><p><img src="https://lgxdn7v4u2.feishu.cn/space/api/box/stream/download/asynccode/?code=MTcxMDFkN2FhZDc2YzYzMzQ2ZjAzMzk5NGFjZjgzMDhfaW91QzA2bndTekhQbnMxRERrS1pqZkl4akExRXdFeTRfVG9rZW46Ym94Y244NkY3OGpvajdDYVNsRzFXRXR6QmhkXzE2NjAyMzc3NTI6MTY2MDI0MTM1Ml9WNA" alt="img"></p><p>{ &lt;参数序号&gt; : &lt;格式控制标记&gt; }</p><h3 id="槽内部对格式化的配置方式"><a href="#槽内部对格式化的配置方式" class="headerlink" title="槽内部对格式化的配置方式"></a>槽内部对格式化的配置方式</h3><p> { &lt; 参数序号 &gt; : &lt; 格式控制标记 &gt; }</p><p> 格式控制标记包括&lt;填充&gt;、&lt;对齐&gt;、&lt;宽度&gt;、&lt;,&gt;、&lt;.精度&gt;、&lt;类型&gt;6个字段，都是可选的，可以组合使用</p><pre class="line-numbers language-Python"><code class="language-Python">n = 5for i in range(1, n + 1, 2): # {}中的0为format参数中第一个参数也就是i个*号，{0:^{2}}也就是对format参数中第一个参数的字符串进行格式化，格式化控制标记就是^{2},其中{2}就是format中的第三个参数也就是空格填充，居中对齐，槽设定的输出宽度为n print("{0:^{2}}".format('*' * i, 100, n))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="eval"><a href="#eval" class="headerlink" title="eval()"></a>eval()</h2><blockquote><p>字符串转数字</p></blockquote><pre class="line-numbers language-Python"><code class="language-Python">print(eval('1.2')+1)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>输出：2.2</p></blockquote><h3 id="eval-函数通过字符串调用函数"><a href="#eval-函数通过字符串调用函数" class="headerlink" title="eval() 函数通过字符串调用函数"></a>eval() 函数通过字符串调用函数</h3><pre class="line-numbers language-Python"><code class="language-Python">def add(a,b):return a+bprint(eval("add(1,2)"))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="eval-同时输入多个变量"><a href="#eval-同时输入多个变量" class="headerlink" title="eval()同时输入多个变量"></a>eval()同时输入多个变量</h3><blockquote><p>输入</p><p>1,2,3</p></blockquote><pre class="line-numbers language-Python"><code class="language-Python">a, b, c = eval(input())print(a)print(b)print(c)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>输出</p><p>1</p><p>2</p><p>3</p></blockquote><h2 id="arg1-arg2-arg3…-函数接受无限制数量的参数"><a href="#arg1-arg2-arg3…-函数接受无限制数量的参数" class="headerlink" title="(arg1,arg2,arg3…)函数接受无限制数量的参数"></a>(arg1,arg2,arg3…)函数接受无限制数量的参数</h2><p>其中b在函数中表达除了a以为剩下的所有的输入参数</p><blockquote><p>第一个参数照常输入，以后的所有参数都输入到<code>*b</code>中</p></blockquote><pre class="line-numbers language-Python"><code class="language-Python">def cmul(a,*b): m = a for i in b:     m*=i return mprint(eval("cmul({})".format(input())))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="输入示例1"><a href="#输入示例1" class="headerlink" title="输入示例1"></a>输入示例1</h3><p> 1,2,3,4</p><p>输出示例1</p><p> 24</p><h2 id="random-randint-参数1，参数2-随机数"><a href="#random-randint-参数1，参数2-随机数" class="headerlink" title="random.randint(参数1，参数2) 随机数"></a>random.randint(参数1，参数2) 随机数</h2><ul><li><p>参数1、参数2必须是整数</p></li><li><p>函数返回参数1和参数2之间的任意整数， 闭区间</p></li></ul><blockquote><p>注意引用头文件</p></blockquote><pre class="line-numbers language-Python"><code class="language-Python"> import random # [1,2] random.randint(1,2)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="字符串截取-切片"><a href="#字符串截取-切片" class="headerlink" title="字符串截取 切片[::]"></a>字符串截取 切片[::]</h2><p> string = ‘12345’</p><blockquote><p>格式：字符串[A:B:step]。方括号中有3个位置可填写整数，它们是A，B，step.</p><p>step不填时，默认值为1</p><p>比如：</p><p>string[0:-1] 结果为 1234</p><p>0也可以省略，写成string[:-1]</p><p>当step&gt;0或step&lt;0时，其他参数省略后对应的默认值见下表：</p></blockquote><pre class="line-numbers language-Python"><code class="language-Python"> s = "12345" print(s[::]) # 倒序输出的时候，切片的第三个参数一定要写-1 print(s[-1:-6:-1]) # 可以简写为 print(s[::-1])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>输出：</p><p>12345</p><p>54321</p><p>54321</p></blockquote><ul><li><p>python切片是左闭右开</p></li><li><p>s[:-1]也就是说倒数第一个字符截取不ß到</p></li></ul><pre class="line-numbers language-Python"><code class="language-Python"> s = "1234" print(s[:-1])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>输出</p><p>123</p></blockquote><h1 id="🔔-注意事项"><a href="#🔔-注意事项" class="headerlink" title="🔔 注意事项"></a>🔔 注意事项</h1><p> cnNumber = “零一二三四五六七八九” number = input() for i in number:     # !!! 在通过字符串数字获取数组元素的时候，要通过eval把字符串转为数字     print(cnNumber[eval(i)],end=””)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> Python 常用函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>adb 常用操作</title>
       <link href="/2022/08/12/adb-chang-yong-cao-zuo/"/>
       <url>/2022/08/12/adb-chang-yong-cao-zuo/</url>
@@ -49,9 +76,9 @@
             
             <tag> Android </tag>
             
-            <tag> Scrcpy </tag>
-            
             <tag> adb </tag>
+            
+            <tag> Scrcpy </tag>
             
             <tag> 投屏 </tag>
             
@@ -95,7 +122,7 @@
     
     
     <entry>
-      <title>Matlab常用操作</title>
+      <title>Matlab 常用操作</title>
       <link href="/2022/08/12/matlab-chang-yong-cao-zuo/"/>
       <url>/2022/08/12/matlab-chang-yong-cao-zuo/</url>
       
