@@ -23,7 +23,21 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/contact/index.html</loc>
+    
+    <lastmod>2022-08-11T13:19:39.357Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2022-08-11T13:19:39.357Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/archives/index.html</loc>
     
     <lastmod>2022-08-11T13:19:39.357Z</lastmod>
     
@@ -38,20 +52,6 @@
   
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2022-08-11T13:19:39.357Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/archives/index.html</loc>
-    
-    <lastmod>2022-08-11T13:19:39.357Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/contact/index.html</loc>
     
     <lastmod>2022-08-11T13:19:39.357Z</lastmod>
     
