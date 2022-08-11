@@ -5,9 +5,9 @@
   <subtitle>算法码上来</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://godweiyang.com/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2022-08-11T13:19:39.357Z</updated>
-  <id>https://godweiyang.com/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>韦阳</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>5W2H | 关于写博客的七点反思</title>
-    <link href="https://godweiyang.com/2020/01/14/5w2h-godweiyang/"/>
-    <id>https://godweiyang.com/2020/01/14/5w2h-godweiyang/</id>
+    <link href="http://yoursite.com/2020/01/14/5w2h-godweiyang/"/>
+    <id>http://yoursite.com/2020/01/14/5w2h-godweiyang/</id>
     <published>2020-01-14T07:27:31.000Z</published>
     <updated>2022-08-11T13:19:39.357Z</updated>
     
@@ -39,17 +39,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://godweiyang.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="博客" scheme="https://godweiyang.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>吧啦吧啦</title>
-    <link href="https://godweiyang.com/2020/01/14/article-title/"/>
-    <id>https://godweiyang.com/2020/01/14/article-title/</id>
+    <link href="http://yoursite.com/2020/01/14/article-title/"/>
+    <id>http://yoursite.com/2020/01/14/article-title/</id>
     <published>2020-01-14T07:27:31.000Z</published>
     <updated>2022-08-11T13:56:57.157Z</updated>
     
@@ -65,10 +65,10 @@
     
     </summary>
     
-      <category term="测试博客" scheme="https://godweiyang.com/categories/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/"/>
+      <category term="测试博客" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="测试玩" scheme="https://godweiyang.com/tags/%E6%B5%8B%E8%AF%95%E7%8E%A9/"/>
+      <category term="测试玩" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95%E7%8E%A9/"/>
     
   </entry>
   
