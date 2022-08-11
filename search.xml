@@ -4,17 +4,25 @@
   
     
     <entry>
-      <title>阿里网盘资源搜索网站合集</title>
-      <link href="/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/"/>
-      <url>/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/</url>
+      <title>adb 常用操作</title>
+      <link href="/2022/08/12/adb-chang-yong-cao-zuo/"/>
+      <url>/2022/08/12/adb-chang-yong-cao-zuo/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="adb常用操作"><a href="#adb常用操作" class="headerlink" title="adb常用操作"></a>adb常用操作</h1><h2 id="adb从手机端传输文件到电脑"><a href="#adb从手机端传输文件到电脑" class="headerlink" title="adb从手机端传输文件到电脑"></a>adb从手机端传输文件到电脑</h2><p>如果此时有多台手机设备 通过 adb -s 设备id 命令 手机文件路径 电脑路径 进行文件传输</p><pre class="line-numbers language-Bash"><code class="language-Bash">adb -s 708566bd pull /storage/emulated/0/DCIM/Camera/VID_20220717_091818.mp4 /Volumes/evo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="adb从电脑端传输文件到手机"><a href="#adb从电脑端传输文件到手机" class="headerlink" title="adb从电脑端传输文件到手机"></a>adb从电脑端传输文件到手机</h2><pre class="line-numbers language-Bash"><code class="language-Bash">adb -s 708566bd push /Volumes/evo/1.txt /storage/emulated/0/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="adb设置屏幕常亮"><a href="#adb设置屏幕常亮" class="headerlink" title="adb设置屏幕常亮"></a>adb设置屏幕常亮</h2><blockquote><p>2147483647 为最大数</p></blockquote><pre class="line-numbers language-Bash"><code class="language-Bash">adb settings put system screen_off_timeout 2147483647<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> adb </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> 资源分享 </tag>
+            <tag> Android </tag>
+            
+            <tag> adb </tag>
             
         </tags>
       
@@ -23,23 +31,172 @@
     
     
     <entry>
-      <title>吧啦吧啦</title>
-      <link href="/2020/01/14/article-title/"/>
-      <url>/2020/01/14/article-title/</url>
+      <title>Scrcpy adb Android 设备投屏控制工具</title>
+      <link href="/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/"/>
+      <url>/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/</url>
       
-        <content type="html"><![CDATA[<h1 id="这是第一次测试博客"><a href="#这是第一次测试博客" class="headerlink" title="这是第一次测试博客"></a>这是第一次测试博客</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="Scrcpy-Android-设备投屏控制工具"><a href="#Scrcpy-Android-设备投屏控制工具" class="headerlink" title="Scrcpy Android 设备投屏控制工具"></a>Scrcpy Android 设备投屏控制工具</h1><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><pre class="line-numbers language-Bash"><code class="language-Bash"># adb 只连接到一个设备的时候 # 开启屏幕控制scrcpy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="控制快捷键"><a href="#控制快捷键" class="headerlink" title="控制快捷键"></a>控制快捷键</h3><table><thead><tr><th>操作</th><th>快捷键</th></tr></thead><tbody><tr><td>全屏</td><td>MOD+f</td></tr><tr><td>向左旋转屏幕</td><td>MOD+← (左箭头)</td></tr><tr><td>向右旋转屏幕</td><td>MOD+→ (右箭头)</td></tr><tr><td>将窗口大小重置为1:1 (匹配像素)</td><td>MOD+g</td></tr><tr><td>将窗口大小重置为消除黑边</td><td>MOD+w | 双击左键¹</td></tr><tr><td>点按 主屏幕</td><td>MOD+h | 中键</td></tr><tr><td>点按 返回</td><td>MOD+b | 右键²</td></tr><tr><td>点按 切换应用</td><td>MOD+s | 第4键³</td></tr><tr><td>点按 菜单 (解锁屏幕)</td><td>MOD+m</td></tr><tr><td>点按 音量+</td><td>MOD+↑ (上箭头)</td></tr><tr><td>点按 音量-</td><td>MOD+↓ (下箭头)</td></tr><tr><td>点按 电源</td><td>MOD+p</td></tr><tr><td>打开屏幕</td><td>鼠标右键²</td></tr><tr><td>关闭设备屏幕 (但继续在电脑上显示)</td><td>MOD+o</td></tr><tr><td>打开设备屏幕</td><td>MOD+Shift+o</td></tr><tr><td>旋转设备屏幕</td><td>MOD+r</td></tr><tr><td>展开通知面板</td><td>MOD+n | 第5键³</td></tr><tr><td>展开设置面板</td><td>MOD+n+n | 双击第5键³</td></tr><tr><td>收起通知面板</td><td>MOD+Shift+n</td></tr><tr><td>复制到剪贴板⁴</td><td>MOD+c</td></tr><tr><td>剪切到剪贴板⁴</td><td>MOD+x</td></tr><tr><td>同步剪贴板并粘贴⁴</td><td>MOD+v</td></tr><tr><td>注入电脑剪贴板文本</td><td>MOD+Shift+v</td></tr><tr><td>打开/关闭FPS显示 (至标准输出)</td><td>MOD+i</td></tr><tr><td>捏拉缩放</td><td>Ctrl+按住并移动鼠标</td></tr><tr><td>拖放 APK 文件</td><td>从电脑安装 APK 文件</td></tr><tr><td>拖放非 APK 文件</td><td>将文件推送至设备</td></tr></tbody></table><h2 id="多个设备如何选择一个进行控制"><a href="#多个设备如何选择一个进行控制" class="headerlink" title="多个设备如何选择一个进行控制"></a>多个设备如何选择一个进行控制</h2><pre class="line-numbers language-Bash"><code class="language-Bash"># scrcpy -s 设备idscrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="局域网内连接"><a href="#局域网内连接" class="headerlink" title="局域网内连接"></a>局域网内连接</h2><h3 id="1-手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机-红米K30Pro举例）"><a href="#1-手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机-红米K30Pro举例）" class="headerlink" title="1.手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机 红米K30Pro举例）"></a>1.手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机 红米K30Pro举例）</h3><p><img src="https://lgxdn7v4u2.feishu.cn/space/api/box/stream/download/asynccode/?code=MGU0N2Y2N2RiZjc5NWIzZjZkYzY2M2M3MzNiNmUxZjRfc2FFUjE0Z1BpbXJpWVZDRlBKZkJmTDM0N0JMb2xGN2FfVG9rZW46Ym94Y25FUzg4QlhUNExmMVZldUFrUFRhVXFmXzE2NjAyMzY4MTY6MTY2MDI0MDQxNl9WNA" alt="img"></p><h3 id="2-找到IP地址和端口"><a href="#2-找到IP地址和端口" class="headerlink" title="2.找到IP地址和端口"></a>2.找到IP地址和端口</h3><p><img src="https://lgxdn7v4u2.feishu.cn/space/api/box/stream/download/asynccode/?code=OWRjODM2Y2UxYjk2Y2I5NTk1YThlNzE2NTUwYzM1N2NfN0VHeXN1OVRobWJaZ0RrVGZmVU9PQTJVclNYQnlJZmdfVG9rZW46Ym94Y25pd213YWFSNkRHYmZpZXZJMjJHcHNmXzE2NjAyMzY4MTY6MTY2MDI0MDQxNl9WNA" alt="img"></p><h3 id="3-通过adb命令连接手机"><a href="#3-通过adb命令连接手机" class="headerlink" title="3.通过adb命令连接手机"></a>3.通过adb命令连接手机</h3><pre class="line-numbers language-Bash"><code class="language-Bash">adb connect 192.168.0.113:40439<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="4-通过scrcpy无线连接手机"><a href="#4-通过scrcpy无线连接手机" class="headerlink" title="4.通过scrcpy无线连接手机"></a>4.通过scrcpy无线连接手机</h3><pre class="line-numbers language-Bash"><code class="language-Bash">scrcpy -s 192.168.0.113:40439<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="Todo"><a href="#Todo" class="headerlink" title="Todo"></a>Todo</h2><p>阅读参考文章，整理远程ssh，或者内网穿透控制（实现远程控制长辈手机）、做一个远程可以控制长辈手机的工具</p><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://blog.csdn.net/huangbiao86/article/details/121464539" target="_blank" rel="noopener">https://blog.csdn.net/huangbiao86/article/details/121464539</a></p>]]></content>
       
       
       <categories>
           
-          <category> 测试博客 </category>
+          <category> Scrcpy </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 测试玩 </tag>
+            <tag> Android </tag>
+            
+            <tag> Scrcpy </tag>
+            
+            <tag> adb </tag>
+            
+            <tag> 投屏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Gradle 注意事项</title>
+      <link href="/2022/08/12/gradle-zhu-yi-shi-xiang/"/>
+      <url>/2022/08/12/gradle-zhu-yi-shi-xiang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><h2 id="Android-Gradle-Plugin、Gradle、-Build-Tools、JDK版本对应关系"><a href="#Android-Gradle-Plugin、Gradle、-Build-Tools、JDK版本对应关系" class="headerlink" title="Android Gradle Plugin、Gradle、 Build Tools、JDK版本对应关系"></a>Android Gradle Plugin、Gradle、 Build Tools、JDK版本对应关系</h2><p>1.首先Android Gradle Version要和 Gradle Plugin Version对应</p><p>下表列出了各个 Android Gradle 插件版本所需的 Gradle 版本。为了获得最佳性能，您应使用 Gradle 和插件这两者的最新版本。</p><table><thead><tr><th>插件版本</th><th>所需的 Gradle 版本</th></tr></thead><tbody><tr><td>1.0.0 - 1.1.3</td><td>2.2.1 - 2.3</td></tr><tr><td>1.2.0 - 1.3.1</td><td>2.2.1 - 2.9</td></tr><tr><td>1.5.0</td><td>2.2.1 - 2.13</td></tr><tr><td>2.0.0 - 2.1.2</td><td>2.10 - 2.13</td></tr><tr><td>2.1.3 - 2.2.3</td><td>2.14.1 - 3.5</td></tr><tr><td>2.3.0+</td><td>3.3+</td></tr><tr><td>3.0.0+</td><td>4.1+</td></tr><tr><td>3.1.0+</td><td>4.4+</td></tr><tr><td>3.2.0 - 3.2.1</td><td>4.6+</td></tr><tr><td>3.3.0 - 3.3.3</td><td>4.10.1+</td></tr><tr><td>3.4.0 - 3.4.3</td><td>5.1.1+</td></tr><tr><td>3.5.0 - 3.5.4</td><td>5.4.1+</td></tr><tr><td>3.6.0 - 3.6.4</td><td>5.6.4+</td></tr><tr><td>4.0.0+</td><td>6.1.1+</td></tr><tr><td>4.1.0+</td><td>6.5+</td></tr><tr><td>4.2.0+</td><td>6.7.1+</td></tr><tr><td>7</td><td>7.0+</td></tr><tr><td>7.1</td><td>7.2+</td></tr><tr><td>7.2</td><td>7.3.3+</td></tr></tbody></table><p>Gradle 7.0.2 支持的最低JDK版本为11</p><table><thead><tr><th>Android Gradle 插件</th><th>Gradle</th><th>SDK Build Tools</th><th>JDK</th><th>默认NDK</th></tr></thead><tbody><tr><td>7.0.0</td><td>最低7.0.2</td><td>最低30.0.2</td><td>最低11</td><td>21.4.7075529</td></tr><tr><td>4.2.0</td><td><a href="https://docs.gradle.org/6.7.1/release-notes.html" target="_blank" rel="noopener">最低6.7.1</a></td><td><a href="https://developer.android.google.cn/studio/releases/build-tools#notes" target="_blank" rel="noopener">最低30.0.2</a></td><td>默认8，可显示指定7Android Studio4.2捆绑java11</td><td>21.4.7075529</td></tr><tr><td>4.1.0</td><td>最低<a href="https://docs.gradle.org/6.5.1/release-notes.html" target="_blank" rel="noopener">6.5</a></td><td>最低<a href="https://developer.android.google.cn/studio/releases/build-tools#notes" target="_blank" rel="noopener">29.0.2</a></td><td></td><td>21.1.6352462</td></tr><tr><td>4.0.0</td><td>6.1.1</td><td>29.0.2</td><td></td><td></td></tr><tr><td>3.6.0</td><td>5.6.4</td><td>28.0.3</td><td></td><td></td></tr><tr><td>3.5.0</td><td><a href="https://docs.gradle.org/5.4.1/release-notes.html" target="_blank" rel="noopener">Gradle 5.4.1</a></td><td><a href="https://developer.android.google.cn/studio/releases/build-tools#notes" target="_blank" rel="noopener">SDK Build Tools 28.0.3</a></td><td></td><td></td></tr><tr><td>3.4.0</td><td><a href="https://docs.gradle.org/5.1.1/release-notes.html" target="_blank" rel="noopener">Gradle 5.1.1</a></td><td><a href="https://developer.android.google.cn/studio/releases/build-tools#notes" target="_blank" rel="noopener">SDK Build Tools 28.0.3</a></td><td></td><td></td></tr><tr><td>3.3.0</td><td><a href="https://docs.gradle.org/4.10.1/release-notes.html" target="_blank" rel="noopener">Gradle 4.10.1</a></td><td><a href="https://developer.android.google.cn/studio/releases/build-tools#notes" target="_blank" rel="noopener">SDK Build Tools 28.0.3</a></td><td></td><td></td></tr><tr><td>3.2.0</td><td><a href="https://docs.gradle.org/4.6/release-notes.html" target="_blank" rel="noopener">Gradle 4.6</a></td><td><a href="https://developer.android.google.cn/studio/releases/build-tools#notes" target="_blank" rel="noopener">SDK Build Tools 28.0.3</a></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> Gradle </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Gradle </tag>
+            
+            <tag> JDK </tag>
+            
+            <tag> Android Gradle Plugin </tag>
+            
+            <tag> Build Tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matlab常用操作</title>
+      <link href="/2022/08/12/matlab-chang-yong-cao-zuo/"/>
+      <url>/2022/08/12/matlab-chang-yong-cao-zuo/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MATLAB常用操作"><a href="#MATLAB常用操作" class="headerlink" title="MATLAB常用操作"></a>MATLAB常用操作</h1><h2 id="产生一个a至b之间的随机矩阵-大小为1x5"><a href="#产生一个a至b之间的随机矩阵-大小为1x5" class="headerlink" title="产生一个a至b之间的随机矩阵,大小为1x5"></a>产生一个a至b之间的随机矩阵,大小为1x5</h2><pre class="line-numbers language-matlab"><code class="language-matlab">a <span class="token operator">+</span> <span class="token punctuation">(</span>b <span class="token operator">-</span> a<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token function">rand</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4"><a href="#产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4" class="headerlink" title="产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4"></a>产生一个均值为0，标准差（方差开根号）为2的正态分布的随机矩阵，大小为3x4</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token function">normrnd</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="roundn—任意位置四舍五入"><a href="#roundn—任意位置四舍五入" class="headerlink" title="roundn—任意位置四舍五入"></a>roundn—任意位置四舍五入</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 0个位 1十位  2百位 -1小数点后一位  </span>a <span class="token operator">=</span> <span class="token number">3.1415</span><span class="token function">roundn</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">% ans   =  3.1400</span><span class="token function">roundn</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true">% ans   =  0</span>a <span class="token operator">=</span><span class="token number">31415</span><span class="token function">roundn</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">% ans  = 31400</span><span class="token function">roundn</span><span class="token punctuation">(</span><span class="token number">5.5</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">%6</span><span class="token function">roundn</span><span class="token punctuation">(</span><span class="token number">5.5</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">%10</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="方差"><a href="#方差" class="headerlink" title="方差"></a>方差</h2><pre class="line-numbers language-matlab"><code class="language-matlab">A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token function">var</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="样本方差"><a href="#样本方差" class="headerlink" title="样本方差"></a>样本方差</h2><pre class="line-numbers language-matlab"><code class="language-matlab">A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token function">var</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="标准差"><a href="#标准差" class="headerlink" title="标准差"></a>标准差</h2><pre class="line-numbers language-matlab"><code class="language-matlab">A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token function">std</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="数组元素求和"><a href="#数组元素求和" class="headerlink" title="数组元素求和"></a>数组元素求和</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 求数组每一列的和</span><span class="token function">sum</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token comment" spellcheck="true">% 求数组每一行的和</span><span class="token function">sum</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="数组元素的乘积"><a href="#数组元素的乘积" class="headerlink" title="数组元素的乘积"></a>数组元素的乘积</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 求数组每一列元素相乘的结果</span><span class="token function">prod</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token comment" spellcheck="true">% 求数组每一行元素相乘的结果</span><span class="token function">prod</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="按列归一化"><a href="#按列归一化" class="headerlink" title="按列归一化"></a>按列归一化</h2><p>每一列的每一个元素除以这一列的和</p><h2 id="求矩阵列向量间的相关系数矩阵"><a href="#求矩阵列向量间的相关系数矩阵" class="headerlink" title="求矩阵列向量间的相关系数矩阵"></a>求矩阵列向量间的相关系数矩阵</h2><pre class="line-numbers language-matlab"><code class="language-matlab">r <span class="token operator">=</span> <span class="token function">corrcoef</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p><strong><em>\</em>param:**</strong></p><p>　　X：这个矩阵X的每一列看做一个向量</p><p><strong><em>\</em>return：**</strong></p><p>　　r： 相关系数矩阵。返回每两列之间的相关系数组成的矩阵，对称阵，对角为方差，一个向量的方差就是对向量的每个数求var。</p><p>　　注意使用时不必对设计阵做标准化处理。因为我们实际要求的是标准化变量的协方差矩阵，而就是原设计阵的相关系数矩阵。</p></blockquote><h2 id="层次分析法"><a href="#层次分析法" class="headerlink" title="层次分析法"></a>层次分析法</h2><p> RI</p><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 这里n=2时，一定是一致矩阵，所以CI = 0，我们为了避免分母为0，将这里的第二个元素改为了很接近0的正数</span>RI<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">0</span> <span class="token number">0.0001</span> <span class="token number">0.52</span> <span class="token number">0.89</span> <span class="token number">1.12</span> <span class="token number">1.26</span> <span class="token number">1.36</span> <span class="token number">1.41</span> <span class="token number">1.46</span> <span class="token number">1.49</span> <span class="token number">1.52</span> <span class="token number">1.54</span> <span class="token number">1.56</span> <span class="token number">1.58</span> <span class="token number">1.59</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="求矩阵最大特征值"><a href="#求矩阵最大特征值" class="headerlink" title="求矩阵最大特征值"></a>求矩阵最大特征值</h3><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">%% 求A的特征向量构成V的列向量，求矩阵A的全部特征值，构成对角阵D</span><span class="token punctuation">[</span>V<span class="token punctuation">,</span>D<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">eig</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">;</span>Max_eig <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">max</span><span class="token punctuation">(</span>D<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="判断矩阵是否是正互反矩阵"><a href="#判断矩阵是否是正互反矩阵" class="headerlink" title="判断矩阵是否是正互反矩阵"></a>判断矩阵是否是正互反矩阵</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token keyword">function</span> flag <span class="token operator">=</span> <span class="token function">isRM</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">% 是否是正互反矩阵的标志变量</span>    flag <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>    <span class="token keyword">if</span> <span class="token function">all</span><span class="token punctuation">(</span><span class="token function">diag</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token function">A</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">)</span><span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span>        <span class="token keyword">for</span> <span class="token number">i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token function">size</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>            <span class="token keyword">for</span> <span class="token number">j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token function">size</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">A</span><span class="token punctuation">(</span><span class="token number">i</span><span class="token punctuation">,</span><span class="token number">j</span><span class="token punctuation">)</span><span class="token operator">~=</span><span class="token number">1</span><span class="token operator">/</span><span class="token function">A</span><span class="token punctuation">(</span><span class="token number">j</span><span class="token punctuation">,</span><span class="token number">i</span><span class="token punctuation">)</span><span class="token punctuation">)</span>                    flag <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>                <span class="token keyword">end</span>            <span class="token keyword">end</span>        <span class="token keyword">end</span>    <span class="token keyword">else</span>        flag <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>    <span class="token keyword">end</span>    <span class="token keyword">if</span> flag<span class="token operator">==</span><span class="token number">1</span>        <span class="token function">disp</span><span class="token punctuation">(</span><span class="token string">'该矩阵是正互反矩阵'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">else</span>        <span class="token function">disp</span><span class="token punctuation">(</span><span class="token string">'该矩阵不是正互反矩阵'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">end</span><span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="获取矩阵的对角元素"><a href="#获取矩阵的对角元素" class="headerlink" title="获取矩阵的对角元素"></a>获取矩阵的对角元素</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 返回包含主对角线上向量A的元素的对角矩阵</span><span class="token function">diag</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="创建对角矩阵"><a href="#创建对角矩阵" class="headerlink" title="创建对角矩阵"></a>创建对角矩阵</h2><pre class="line-numbers language-matlab"><code class="language-matlab">v <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span> <span class="token number">1</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">-</span><span class="token number">2</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">% 使用 diag 创建一个包含 v 在主对角线上的元素的矩阵。</span>D <span class="token operator">=</span> <span class="token function">diag</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h1 id="相关性模型"><a href="#相关性模型" class="headerlink" title="相关性模型"></a>相关性模型</h1><h2 id="描述性统计"><a href="#描述性统计" class="headerlink" title="描述性统计"></a>描述性统计</h2><pre><code></code></pre><h1 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h1><h2 id="求解析解"><a href="#求解析解" class="headerlink" title="求解析解"></a>求解析解</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=2*x'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">% 这里要指定自变量为x</span><span class="token comment" spellcheck="true">% 2*x + C1*exp(x) + 2  (这里的C1表示任意常数，有时候也会出现C2 C3等)</span><span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=2*x'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">% 如果不指定自变量的话，会默认自变量为t，x会看成一个常数</span><span class="token comment" spellcheck="true">% 2*x + C2*exp(t)</span><span class="token comment" spellcheck="true">%% 如果微分方程中还有其他的未知参数</span><span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=a*x'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">% a是一个未知的参数</span><span class="token comment" spellcheck="true">%% 如果微分方程有已知条件 y(0)=3</span><span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'y-Dy=2*x'</span><span class="token punctuation">,</span><span class="token string">'y(0)=3'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">%% 如果微分方程已知多个条件</span><span class="token function">dsolve</span><span class="token punctuation">(</span><span class="token string">'D2y+4*Dy+29*y=0'</span><span class="token punctuation">,</span><span class="token string">'y(0)=0,Dy(0)=15'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="求数值解"><a href="#求数值解" class="headerlink" title="求数值解"></a>求数值解</h2><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token function">ode45</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><ul><li><p>量纲不同的数据要进行标准化，消除不同指标量纲的影响</p></li><li><p>代码开始记得加clear，clc初始化</p></li></ul><ul><li><p>批量生成变量</p><pre class="line-numbers language-matlab"><code class="language-matlab"><span class="token comment" spellcheck="true">% 批量生成变量</span><span class="token keyword">for</span> <span class="token number">i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token number">10</span>   generateVar <span class="token operator">=</span> <span class="token function">strcat</span><span class="token punctuation">(</span><span class="token string">'w'</span><span class="token punctuation">,</span><span class="token function">num2str</span><span class="token punctuation">(</span><span class="token number">i</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'='</span><span class="token punctuation">,</span><span class="token function">num2str</span><span class="token punctuation">(</span><span class="token number">i</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token function">eval</span><span class="token punctuation">(</span>generateVar<span class="token punctuation">)</span><span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><ul><li>plot绘制多个图形的时候加上figure(n)标签，防止前面的被覆盖</li><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Matlab </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Matlab </tag>
+            
+            <tag> 数学建模 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python程序打包成.exe可执行文件</title>
+      <link href="/2022/08/12/python-cheng-xu-da-bao-cheng-exe-ke-zhi-xing-wen-jian/"/>
+      <url>/2022/08/12/python-cheng-xu-da-bao-cheng-exe-ke-zhi-xing-wen-jian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python程序打包成-exe可执行文件"><a href="#Python程序打包成-exe可执行文件" class="headerlink" title="Python程序打包成.exe可执行文件"></a>Python程序打包成.exe可执行文件</h1><blockquote><p>首先下载pyinstaller</p><p>pycharm下方的terminal终端里输入：</p><p>pip install pyinstaller</p><p>然后在终端内输入命令：</p><ul><li>推荐<br>pyinstaller -w -F xxx.py</li><li>可选<br>pyinstaller -F xxxx.py<br>(pyinstaller -w -F xxx.py其中的-w是生成的.exe文件不出现cmd命令提示窗口；-F表示希望所有的程序全部打包在一起，生成一个.exe文件，这样生成的.exe文件集成度高，但是运行速度慢，如果不写-F，生成一堆.dll文件，这样的程序里文件很多，但是运行速度比较快)</li></ul><p>如图所示是不写-F的结果</p><p> <img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202208120035615.png" alt="在这里插入图片描述"></p></blockquote><p> 注意事项：xxx.py知得失整个项目的入口程序，写项目的时候可能是多个文件编程，但是整个项目靠哪个文件作为入口进入的就填那个文件的名字。</p><p>常见错误：<br>ValueError: script ‘C:\Users\Administrator.XXX.py’ not found<br>找不到XXX.py这个程序</p><p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202208120035665.png" alt="在这里插入图片描述"></p><p>解决方案：<br>pyinstaller找文件的方法是看你建立的那个工程文件夹里有没有你写进去的文件，而不是看子文件夹里有没有。如果您是在子文件夹中写程序，可以把你写的所有程序都拷贝到工程文件夹中。<br>如果你在代码中导入了图片、文档等与路径相关的文件，注意修改路径。</p><p>生成的.exe文件在项目文件夹的dist文件夹下</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 程序打包 </tag>
+            
+            <tag> exe可执行文件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python项目规范</title>
+      <link href="/2022/08/12/python-xiang-mu-gui-fan/"/>
+      <url>/2022/08/12/python-xiang-mu-gui-fan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Python项目规范"><a href="#Python项目规范" class="headerlink" title="Python项目规范"></a>Python项目规范</h1><h3 id="依赖文件requirements"><a href="#依赖文件requirements" class="headerlink" title="依赖文件requirements"></a>依赖文件requirements</h3><p>每个项目都要生成依赖文件requirements<br>使用pipreqs库（找当前项目依赖的包）</p><pre class="line-numbers language-bash"><code class="language-bash">pip3 <span class="token function">install</span> pipreqs    <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 生成当前项目依赖的包文件</span>pipreqs ./ --encoding<span class="token operator">=</span>utf-8<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 执行下面代码就会把项目用到的所有组件装上</span>pip3 <span class="token function">install</span> -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="每个项目都有项目缩略图preview"><a href="#每个项目都有项目缩略图preview" class="headerlink" title="每个项目都有项目缩略图preview"></a>每个项目都有项目缩略图preview</h3><p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202208120031036.png" alt="image-20220812003152983"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目规范 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 项目规范 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阿里云盘资源搜索网站合集</title>
+      <link href="/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/"/>
+      <url>/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 资源分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阿里云盘 </tag>
+            
+            <tag> 资源分享 </tag>
             
         </tags>
       

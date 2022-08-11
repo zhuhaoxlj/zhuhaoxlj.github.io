@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-08-11T15:26:23.963Z</updated>
+  <updated>2022-08-11T17:04:16.684Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,27 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>阿里网盘资源搜索网站合集</title>
-    <link href="http://yoursite.com/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/"/>
-    <id>http://yoursite.com/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/</id>
-    <published>2022-08-11T15:14:53.000Z</published>
-    <updated>2022-08-11T15:26:23.963Z</updated>
+    <title>adb 常用操作</title>
+    <link href="http://yoursite.com/2022/08/12/adb-chang-yong-cao-zuo/"/>
+    <id>http://yoursite.com/2022/08/12/adb-chang-yong-cao-zuo/</id>
+    <published>2022-08-11T16:56:30.000Z</published>
+    <updated>2022-08-11T17:04:16.684Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;h1 id=&quot;adb常用操作&quot;&gt;&lt;a href=&quot;#adb常用操作&quot; class=&quot;headerlink&quot; title=&quot;adb常用操作&quot;&gt;&lt;/a&gt;adb常用操作&lt;/h1&gt;&lt;h2 id=&quot;adb从手机端传输文件到电脑&quot;&gt;&lt;a href=&quot;#adb从手机端传输文件到电脑&quot;
+        
+      
+    
     </summary>
     
+      <category term="adb" scheme="http://yoursite.com/categories/adb/"/>
     
-      <category term="资源分享" scheme="http://yoursite.com/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+      <category term="adb" scheme="http://yoursite.com/tags/adb/"/>
     
   </entry>
   
   <entry>
-    <title>吧啦吧啦</title>
-    <link href="http://yoursite.com/2020/01/14/article-title/"/>
-    <id>http://yoursite.com/2020/01/14/article-title/</id>
-    <published>2020-01-14T07:27:31.000Z</published>
-    <updated>2022-08-11T13:56:57.157Z</updated>
+    <title>Scrcpy adb Android 设备投屏控制工具</title>
+    <link href="http://yoursite.com/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/"/>
+    <id>http://yoursite.com/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/</id>
+    <published>2022-08-11T16:54:20.000Z</published>
+    <updated>2022-08-11T16:56:02.909Z</updated>
     
     <summary type="html">
     
@@ -45,16 +57,162 @@
       
         
         
-          &lt;h1 id=&quot;这是第一次测试博客&quot;&gt;&lt;a href=&quot;#这是第一次测试博客&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;Scrcpy-Android-设备投屏控制工具&quot;&gt;&lt;a href=&quot;#Scrcpy-Android-设备投屏控制工具&quot; class=&quot;headerlink&quot; title=&quot;Scrcpy Android 设备投屏控制工具&quot;&gt;&lt;/a&gt;Scrcpy Android
         
       
     
     </summary>
     
-      <category term="测试博客" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/"/>
+      <category term="Scrcpy" scheme="http://yoursite.com/categories/Scrcpy/"/>
     
     
-      <category term="测试玩" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95%E7%8E%A9/"/>
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+      <category term="Scrcpy" scheme="http://yoursite.com/tags/Scrcpy/"/>
+    
+      <category term="adb" scheme="http://yoursite.com/tags/adb/"/>
+    
+      <category term="投屏" scheme="http://yoursite.com/tags/%E6%8A%95%E5%B1%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gradle 注意事项</title>
+    <link href="http://yoursite.com/2022/08/12/gradle-zhu-yi-shi-xiang/"/>
+    <id>http://yoursite.com/2022/08/12/gradle-zhu-yi-shi-xiang/</id>
+    <published>2022-08-11T16:47:03.000Z</published>
+    <updated>2022-08-11T16:51:15.673Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;注意事项&quot;&gt;&lt;a href=&quot;#注意事项&quot; class=&quot;headerlink&quot; title=&quot;注意事项&quot;&gt;&lt;/a&gt;注意事项&lt;/h1&gt;&lt;h2 id=&quot;Android-Gradle-Plugin、Gradle、-Build-Tools、JDK版本对应关系&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Gradle" scheme="http://yoursite.com/categories/Gradle/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+      <category term="Gradle" scheme="http://yoursite.com/tags/Gradle/"/>
+    
+      <category term="JDK" scheme="http://yoursite.com/tags/JDK/"/>
+    
+      <category term="Android Gradle Plugin" scheme="http://yoursite.com/tags/Android-Gradle-Plugin/"/>
+    
+      <category term="Build Tools" scheme="http://yoursite.com/tags/Build-Tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matlab常用操作</title>
+    <link href="http://yoursite.com/2022/08/12/matlab-chang-yong-cao-zuo/"/>
+    <id>http://yoursite.com/2022/08/12/matlab-chang-yong-cao-zuo/</id>
+    <published>2022-08-11T16:43:01.000Z</published>
+    <updated>2022-08-11T16:52:56.897Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;MATLAB常用操作&quot;&gt;&lt;a href=&quot;#MATLAB常用操作&quot; class=&quot;headerlink&quot; title=&quot;MATLAB常用操作&quot;&gt;&lt;/a&gt;MATLAB常用操作&lt;/h1&gt;&lt;h2 id=&quot;产生一个a至b之间的随机矩阵-大小为1x5&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Matlab" scheme="http://yoursite.com/categories/Matlab/"/>
+    
+    
+      <category term="Matlab" scheme="http://yoursite.com/tags/Matlab/"/>
+    
+      <category term="数学建模" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python程序打包成.exe可执行文件</title>
+    <link href="http://yoursite.com/2022/08/12/python-cheng-xu-da-bao-cheng-exe-ke-zhi-xing-wen-jian/"/>
+    <id>http://yoursite.com/2022/08/12/python-cheng-xu-da-bao-cheng-exe-ke-zhi-xing-wen-jian/</id>
+    <published>2022-08-11T16:34:46.000Z</published>
+    <updated>2022-08-11T16:52:48.975Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python程序打包成-exe可执行文件&quot;&gt;&lt;a href=&quot;#Python程序打包成-exe可执行文件&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="程序打包" scheme="http://yoursite.com/tags/%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/"/>
+    
+      <category term="exe可执行文件" scheme="http://yoursite.com/tags/exe%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python项目规范</title>
+    <link href="http://yoursite.com/2022/08/12/python-xiang-mu-gui-fan/"/>
+    <id>http://yoursite.com/2022/08/12/python-xiang-mu-gui-fan/</id>
+    <published>2022-08-11T16:29:51.000Z</published>
+    <updated>2022-08-11T16:52:37.694Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python项目规范&quot;&gt;&lt;a href=&quot;#Python项目规范&quot; class=&quot;headerlink&quot; title=&quot;Python项目规范&quot;&gt;&lt;/a&gt;Python项目规范&lt;/h1&gt;&lt;h3 id=&quot;依赖文件requirements&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="项目规范" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="项目规范" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云盘资源搜索网站合集</title>
+    <link href="http://yoursite.com/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/"/>
+    <id>http://yoursite.com/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/</id>
+    <published>2022-08-11T15:14:53.000Z</published>
+    <updated>2022-08-11T16:52:22.219Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="资源分享" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="阿里云盘" scheme="http://yoursite.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/"/>
+    
+      <category term="资源分享" scheme="http://yoursite.com/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   

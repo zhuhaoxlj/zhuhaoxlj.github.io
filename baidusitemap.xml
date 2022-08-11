@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2022/08/12/adb-chang-yong-cao-zuo/</loc>
+    <lastmod>2022-08-11</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/</loc>
+    <lastmod>2022-08-11</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2022/08/12/matlab-chang-yong-cao-zuo/</loc>
+    <lastmod>2022-08-11</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2022/08/12/python-cheng-xu-da-bao-cheng-exe-ke-zhi-xing-wen-jian/</loc>
+    <lastmod>2022-08-11</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2022/08/12/python-xiang-mu-gui-fan/</loc>
+    <lastmod>2022-08-11</lastmod>
+  </url>
+  <url>
     <loc>http://yoursite.com/2022/08/11/a-li-wang-pan-zi-yuan-sou-suo-wang-zhan-he-ji/</loc>
     <lastmod>2022-08-11</lastmod>
   </url>
   <url>
-    <loc>http://yoursite.com/2020/01/14/article-title/</loc>
+    <loc>http://yoursite.com/2022/08/12/gradle-zhu-yi-shi-xiang/</loc>
     <lastmod>2022-08-11</lastmod>
   </url>
 </urlset> 
