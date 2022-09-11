@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Scrcpy adb Android 设备投屏控制工具, ECNU NLP DeepLearning AntNLP MarkGosling godweiyang WeiYang 机器视觉 深度学习 软件开发">
+    <meta name="keywords" content="树莓派与声音传感器 python, ECNU NLP DeepLearning AntNLP MarkGosling godweiyang WeiYang 机器视觉 深度学习 软件开发">
     <meta name="description" content="淮阴师范学院 | 计算机科学与技术 | 机器视觉">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Scrcpy adb Android 设备投屏控制工具 | MarkGosling的博客</title>
+    <title>树莓派与声音传感器 python | MarkGosling的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Scrcpy adb Android 设备投屏控制工具</h1>
+                    <h1 class="description center-align post-title">树莓派与声音传感器 python</h1>
                 </div>
             </div>
         </div>
@@ -432,20 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Android/">
-                                <span class="chip bg-color">Android</span>
-                            </a>
-                        
-                            <a href="/tags/adb/">
-                                <span class="chip bg-color">adb</span>
-                            </a>
-                        
-                            <a href="/tags/Scrcpy/">
-                                <span class="chip bg-color">Scrcpy</span>
-                            </a>
-                        
-                            <a href="/tags/投屏/">
-                                <span class="chip bg-color">投屏</span>
+                            <a href="/tags/python-树莓派-声音传感器/">
+                                <span class="chip bg-color">-- python -- 树莓派 -- 声音传感器</span>
                             </a>
                         
                     </div>
@@ -456,8 +444,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Scrcpy/" class="post-category">
-                                Scrcpy
+                            <a href="/categories/树莓派/" class="post-category">
+                                -- 树莓派
                             </a>
                         
                     </div>
@@ -469,7 +457,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-12
+                    2022-09-11
                 </div>
                 
 
@@ -500,133 +488,25 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Scrcpy-Android-设备投屏控制工具"><a href="#Scrcpy-Android-设备投屏控制工具" class="headerlink" title="Scrcpy Android 设备投屏控制工具"></a>Scrcpy Android 设备投屏控制工具</h1><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><pre class="line-numbers language-Bash"><code class="language-Bash"># adb 只连接到一个设备的时候 
-# 开启屏幕控制
-scrcpy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="控制快捷键"><a href="#控制快捷键" class="headerlink" title="控制快捷键"></a>控制快捷键</h3><table>
-<thead>
-<tr>
-<th>操作</th>
-<th>快捷键</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>全屏</td>
-<td>MOD+f</td>
-</tr>
-<tr>
-<td>向左旋转屏幕</td>
-<td>MOD+← (左箭头)</td>
-</tr>
-<tr>
-<td>向右旋转屏幕</td>
-<td>MOD+→ (右箭头)</td>
-</tr>
-<tr>
-<td>将窗口大小重置为1:1 (匹配像素)</td>
-<td>MOD+g</td>
-</tr>
-<tr>
-<td>将窗口大小重置为消除黑边</td>
-<td>MOD+w | 双击左键¹</td>
-</tr>
-<tr>
-<td>点按 主屏幕</td>
-<td>MOD+h | 中键</td>
-</tr>
-<tr>
-<td>点按 返回</td>
-<td>MOD+b | 右键²</td>
-</tr>
-<tr>
-<td>点按 切换应用</td>
-<td>MOD+s | 第4键³</td>
-</tr>
-<tr>
-<td>点按 菜单 (解锁屏幕)</td>
-<td>MOD+m</td>
-</tr>
-<tr>
-<td>点按 音量+</td>
-<td>MOD+↑ (上箭头)</td>
-</tr>
-<tr>
-<td>点按 音量-</td>
-<td>MOD+↓ (下箭头)</td>
-</tr>
-<tr>
-<td>点按 电源</td>
-<td>MOD+p</td>
-</tr>
-<tr>
-<td>打开屏幕</td>
-<td>鼠标右键²</td>
-</tr>
-<tr>
-<td>关闭设备屏幕 (但继续在电脑上显示)</td>
-<td>MOD+o</td>
-</tr>
-<tr>
-<td>打开设备屏幕</td>
-<td>MOD+Shift+o</td>
-</tr>
-<tr>
-<td>旋转设备屏幕</td>
-<td>MOD+r</td>
-</tr>
-<tr>
-<td>展开通知面板</td>
-<td>MOD+n | 第5键³</td>
-</tr>
-<tr>
-<td>展开设置面板</td>
-<td>MOD+n+n | 双击第5键³</td>
-</tr>
-<tr>
-<td>收起通知面板</td>
-<td>MOD+Shift+n</td>
-</tr>
-<tr>
-<td>复制到剪贴板⁴</td>
-<td>MOD+c</td>
-</tr>
-<tr>
-<td>剪切到剪贴板⁴</td>
-<td>MOD+x</td>
-</tr>
-<tr>
-<td>同步剪贴板并粘贴⁴</td>
-<td>MOD+v</td>
-</tr>
-<tr>
-<td>注入电脑剪贴板文本</td>
-<td>MOD+Shift+v</td>
-</tr>
-<tr>
-<td>打开/关闭FPS显示 (至标准输出)</td>
-<td>MOD+i</td>
-</tr>
-<tr>
-<td>捏拉缩放</td>
-<td>Ctrl+按住并移动鼠标</td>
-</tr>
-<tr>
-<td>拖放 APK 文件</td>
-<td>从电脑安装 APK 文件</td>
-</tr>
-<tr>
-<td>拖放非 APK 文件</td>
-<td>将文件推送至设备</td>
-</tr>
-</tbody></table>
-<h2 id="多个设备如何选择一个进行控制"><a href="#多个设备如何选择一个进行控制" class="headerlink" title="多个设备如何选择一个进行控制"></a>多个设备如何选择一个进行控制</h2><pre class="line-numbers language-Bash"><code class="language-Bash"># scrcpy -s 设备id
-scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="局域网内连接"><a href="#局域网内连接" class="headerlink" title="局域网内连接"></a>局域网内连接</h2><h3 id="1-手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机-红米K30Pro举例）"><a href="#1-手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机-红米K30Pro举例）" class="headerlink" title="1.手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机 红米K30Pro举例）"></a>1.手机开启无线adb调试（一般都在开发者选项中，这里我以小米手机 红米K30Pro举例）</h3><p><img src="https://lgxdn7v4u2.feishu.cn/space/api/box/stream/download/asynccode/?code=MGU0N2Y2N2RiZjc5NWIzZjZkYzY2M2M3MzNiNmUxZjRfc2FFUjE0Z1BpbXJpWVZDRlBKZkJmTDM0N0JMb2xGN2FfVG9rZW46Ym94Y25FUzg4QlhUNExmMVZldUFrUFRhVXFmXzE2NjAyMzY4MTY6MTY2MDI0MDQxNl9WNA" alt="img"></p>
-<h3 id="2-找到IP地址和端口"><a href="#2-找到IP地址和端口" class="headerlink" title="2.找到IP地址和端口"></a>2.找到IP地址和端口</h3><p><img src="https://lgxdn7v4u2.feishu.cn/space/api/box/stream/download/asynccode/?code=OWRjODM2Y2UxYjk2Y2I5NTk1YThlNzE2NTUwYzM1N2NfN0VHeXN1OVRobWJaZ0RrVGZmVU9PQTJVclNYQnlJZmdfVG9rZW46Ym94Y25pd213YWFSNkRHYmZpZXZJMjJHcHNmXzE2NjAyMzY4MTY6MTY2MDI0MDQxNl9WNA" alt="img"></p>
-<h3 id="3-通过adb命令连接手机"><a href="#3-通过adb命令连接手机" class="headerlink" title="3.通过adb命令连接手机"></a>3.通过adb命令连接手机</h3><pre class="line-numbers language-Bash"><code class="language-Bash">adb connect 192.168.0.113:40439<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="4-通过scrcpy无线连接手机"><a href="#4-通过scrcpy无线连接手机" class="headerlink" title="4.通过scrcpy无线连接手机"></a>4.通过scrcpy无线连接手机</h3><pre class="line-numbers language-Bash"><code class="language-Bash">scrcpy -s 192.168.0.113:40439<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="Todo"><a href="#Todo" class="headerlink" title="Todo"></a>Todo</h2><p>阅读参考文章，整理远程ssh，或者内网穿透控制（实现远程控制长辈手机）、做一个远程可以控制长辈手机的工具</p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://blog.csdn.net/huangbiao86/article/details/121464539" target="_blank" rel="noopener">https://blog.csdn.net/huangbiao86/article/details/121464539</a></p>
+                <p>知识点：<br>运用树莓派连接PCF8591芯片将声音传感器的模拟信号转换成数字信号。（PCF8591芯片最大的特点就是将模拟信号转换成数字信号）<br>工具：<br>1.树莓派 <em>1<br>2.PCF8591 </em>1<br>3.声音传感器 *1<br><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209111904880.jpeg" alt="在这里插入图片描述"><br><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209111904994.jpeg" alt="在这里插入图片描述"><br>这里，由于树莓派中没有PCF8591的库文件，所以首先应该添加PCF8591的py文件到树莓派中，这里我也在网上找的<a href="https://pan.baidu.com/s/1ivGO7CSxYdB6vHLvqkagJg" target="_blank" rel="noopener">PCF8591的库文件</a>(提取码:0000)，大家可以自行下载。下面，就是要在刚刚下载好的文件夹里，再新创键一个.py文件作为我们接下来要写的主程序。<br>再写主程序之前，我们需要确认树莓派的IIC是否有打开，首先点击树莓派最左上角的图标，如下图所示：<img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209111904133.jpeg" alt="在这里插入图片描述"><br>之后，点开raspberry pi congifuration得到下图<img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209111904304.png" alt="在这里插入图片描述"><br>在找到interfaces点开，找到IIC，SPI这两个将它们Enable，<img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209111904368.png" alt="在这里插入图片描述"><br>完成以上步骤后可能要将树莓派重启。重启过后，我们将树莓派与PCF8591，声音传感器连接上线，<img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209111904765.jpeg" alt="在这里插入图片描述"><br>我画红圈的地方是只要你用到PCF8591就得在树莓派或其他设备接上线的，然后再用AIN1接上声音传感器的A0处，声音传感器的+，G处再接的上高低电平。<br>当接线完成后，打开终端并输入<code>i2cdetect -y 1</code>，可能得到如下图：<img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209111904877.png" alt="在这里插入图片描述"><br>这一步是找到属于IIC总线打开后你设备的地址，所以写程序首先要给对你的设备地址<code>PCF8591.setup(0x48)</code>,这个0x48对应上你上面查到的你自己的设备地址，然后就是读取读取AIN1的数值<code>PCF8591.read(1)</code>,这里1对应AIN1的接口。<br>完整代码：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">import</span> PCF8591 
+def loop<span class="token punctuation">(</span><span class="token punctuation">)</span>:
+    <span class="token keyword">while</span> True:
+        <span class="token keyword">if</span> PCF8591.read<span class="token punctuation">(</span>1<span class="token punctuation">)</span> <span class="token operator">&lt;</span> 50 <span class="token keyword">:</span>
+            print <span class="token punctuation">(</span>PCF8591.read<span class="token punctuation">(</span>1<span class="token punctuation">))</span> <span class="token comment" spellcheck="true">#读取AIN1的数值</span>
+        <span class="token keyword">elif</span> PCF8591.read<span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token operator">></span>50:
+            print<span class="token punctuation">(</span><span class="token string">"noises!"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token keyword">:</span>
+    try:
+        PCF8591.setup<span class="token punctuation">(</span>0x48<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#首先设置设备地址</span>
+        loop<span class="token punctuation">(</span><span class="token punctuation">)</span>          
+    except KeyboardInterrupt:
+        GPIO.cleanup<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#释放AOUT端口</span>
+
+
+12345678910111213141516<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>以上就是树莓派关于声音传感器的用法。</p>
 
                 
             </div>
@@ -653,7 +533,7 @@ scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></spa
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhuhaoxlj.github.io/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/">https://zhuhaoxlj.github.io/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/</a>
+                    <a href="https://zhuhaoxlj.github.io/2022/09/11/shu-mei-pai-yu-sheng-yin-chuan-gan-qi-python/">https://zhuhaoxlj.github.io/2022/09/11/shu-mei-pai-yu-sheng-yin-chuan-gan-qi-python/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -691,20 +571,8 @@ scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></spa
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Android/">
-                                    <span class="chip bg-color">Android</span>
-                                </a>
-                            
-                                <a href="/tags/adb/">
-                                    <span class="chip bg-color">adb</span>
-                                </a>
-                            
-                                <a href="/tags/Scrcpy/">
-                                    <span class="chip bg-color">Scrcpy</span>
-                                </a>
-                            
-                                <a href="/tags/投屏/">
-                                    <span class="chip bg-color">投屏</span>
+                                <a href="/tags/python-树莓派-声音传感器/">
+                                    <span class="chip bg-color">-- python -- 树莓派 -- 声音传感器</span>
                                 </a>
                             
                         </div>
@@ -874,16 +742,18 @@ scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></spa
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/08/12/adb-chang-yong-cao-zuo/">
+                <a href="/2022/09/11/shu-mei-pai-yu-sheng-yin-chuan-gan-qi-python/">
                     <div class="card-image">
                         
-                        <img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202208120058624.png" class="responsive-img" alt="adb 常用操作">
                         
-                        <span class="card-title">adb 常用操作</span>
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="树莓派与声音传感器 python">
+                        
+                        <span class="card-title">树莓派与声音传感器 python</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -893,30 +763,27 @@ scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></spa
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/adb/" class="post-category">
-                                    adb
+                            <a href="/categories/树莓派/" class="post-category">
+                                    -- 树莓派
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
-                    </a>
-                    
-                    <a href="/tags/adb/">
-                        <span class="chip bg-color">adb</span>
+                    <a href="/tags/python-树莓派-声音传感器/">
+                        <span class="chip bg-color">-- python -- 树莓派 -- 声音传感器</span>
                     </a>
                     
                 </div>
@@ -930,13 +797,13 @@ scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></spa
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/12/gradle-zhu-yi-shi-xiang/">
+                <a href="/2022/08/12/python-chang-yong-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Gradle 注意事项">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Python 常用函数">
                         
-                        <span class="card-title">Gradle 注意事项</span>
+                        <span class="card-title">Python 常用函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -953,8 +820,8 @@ scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></spa
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Gradle/" class="post-category">
-                                    Gradle
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
                                 </a>
                             
                             
@@ -964,24 +831,12 @@ scrcpy -s a7057bc4<span aria-hidden="true" class="line-numbers-rows"><span></spa
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
-                    <a href="/tags/Gradle/">
-                        <span class="chip bg-color">Gradle</span>
-                    </a>
-                    
-                    <a href="/tags/JDK/">
-                        <span class="chip bg-color">JDK</span>
-                    </a>
-                    
-                    <a href="/tags/Android-Gradle-Plugin/">
-                        <span class="chip bg-color">Android Gradle Plugin</span>
-                    </a>
-                    
-                    <a href="/tags/Build-Tools/">
-                        <span class="chip bg-color">Build Tools</span>
+                    <a href="/tags/Python-常用函数/">
+                        <span class="chip bg-color">Python 常用函数</span>
                     </a>
                     
                 </div>
