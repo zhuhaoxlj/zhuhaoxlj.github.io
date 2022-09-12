@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhuhaoxlj.github.io/"/>
-  <updated>2022-09-11T11:04:55.195Z</updated>
+  <updated>2022-09-12T00:50:53.492Z</updated>
   <id>https://zhuhaoxlj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhuhaoxlj.github.io/2022/09/11/shu-mei-pai-yu-sheng-yin-chuan-gan-qi-python/"/>
     <id>https://zhuhaoxlj.github.io/2022/09/11/shu-mei-pai-yu-sheng-yin-chuan-gan-qi-python/</id>
     <published>2022-09-11T11:00:30.000Z</published>
-    <updated>2022-09-11T11:04:55.195Z</updated>
+    <updated>2022-09-12T00:50:53.492Z</updated>
     
     <summary type="html">
     
@@ -35,10 +35,14 @@
     
     </summary>
     
-      <category term="-- 树莓派" scheme="https://zhuhaoxlj.github.io/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://zhuhaoxlj.github.io/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
     
-      <category term="-- python -- 树莓派 -- 声音传感器" scheme="https://zhuhaoxlj.github.io/tags/python-%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%A3%B0%E9%9F%B3%E4%BC%A0%E6%84%9F%E5%99%A8/"/>
+      <category term="python" scheme="https://zhuhaoxlj.github.io/tags/python/"/>
+    
+      <category term="树莓派" scheme="https://zhuhaoxlj.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+      <category term="声音传感器" scheme="https://zhuhaoxlj.github.io/tags/%E5%A3%B0%E9%9F%B3%E4%BC%A0%E6%84%9F%E5%99%A8/"/>
     
   </entry>
   
@@ -122,9 +126,9 @@
     
       <category term="Android" scheme="https://zhuhaoxlj.github.io/tags/Android/"/>
     
-      <category term="adb" scheme="https://zhuhaoxlj.github.io/tags/adb/"/>
-    
       <category term="Scrcpy" scheme="https://zhuhaoxlj.github.io/tags/Scrcpy/"/>
+    
+      <category term="adb" scheme="https://zhuhaoxlj.github.io/tags/adb/"/>
     
       <category term="投屏" scheme="https://zhuhaoxlj.github.io/tags/%E6%8A%95%E5%B1%8F/"/>
     
