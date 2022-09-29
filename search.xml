@@ -134,9 +134,9 @@
             
             <tag> Android </tag>
             
-            <tag> adb </tag>
-            
             <tag> Scrcpy </tag>
+            
+            <tag> adb </tag>
             
             <tag> 投屏 </tag>
             
@@ -252,9 +252,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 项目规范 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
