@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhuhaoxlj.github.io/"/>
-  <updated>2022-09-29T17:11:44.472Z</updated>
+  <updated>2022-09-30T02:10:26.280Z</updated>
   <id>https://zhuhaoxlj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhuhaoxlj.github.io/2022/09/30/pythno-pa-chong-jiao-cheng/"/>
     <id>https://zhuhaoxlj.github.io/2022/09/30/pythno-pa-chong-jiao-cheng/</id>
     <published>2022-09-29T16:57:08.000Z</published>
-    <updated>2022-09-29T17:11:44.472Z</updated>
+    <updated>2022-09-30T02:10:26.280Z</updated>
     
     <summary type="html">
     
@@ -39,7 +39,7 @@
       <category term="Python" scheme="https://zhuhaoxlj.github.io/categories/Python/"/>
     
     
-      <category term="python" scheme="https://zhuhaoxlj.github.io/tags/python/"/>
+      <category term="Python" scheme="https://zhuhaoxlj.github.io/tags/Python/"/>
     
       <category term="爬虫" scheme="https://zhuhaoxlj.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
@@ -157,9 +157,9 @@
     
       <category term="Android" scheme="https://zhuhaoxlj.github.io/tags/Android/"/>
     
-      <category term="Scrcpy" scheme="https://zhuhaoxlj.github.io/tags/Scrcpy/"/>
-    
       <category term="adb" scheme="https://zhuhaoxlj.github.io/tags/adb/"/>
+    
+      <category term="Scrcpy" scheme="https://zhuhaoxlj.github.io/tags/Scrcpy/"/>
     
       <category term="投屏" scheme="https://zhuhaoxlj.github.io/tags/%E6%8A%95%E5%B1%8F/"/>
     
@@ -279,9 +279,9 @@
       <category term="项目规范" scheme="https://zhuhaoxlj.github.io/categories/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/"/>
     
     
-      <category term="项目规范" scheme="https://zhuhaoxlj.github.io/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/"/>
-    
       <category term="Python" scheme="https://zhuhaoxlj.github.io/tags/Python/"/>
+    
+      <category term="项目规范" scheme="https://zhuhaoxlj.github.io/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
