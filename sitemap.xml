@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhuhaoxlj.github.io/2022/09/30/pythno-pa-chong-jiao-cheng/</loc>
+    
+    <lastmod>2022-09-30T02:13:14.132Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhuhaoxlj.github.io/2022/08/12/scrcpy-adb-android-she-bei-tou-ping-kong-zhi-gong-ju/</loc>
     
     <lastmod>2022-09-30T02:11:24.748Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://zhuhaoxlj.github.io/2022/09/11/shu-mei-pai-yu-sheng-yin-chuan-gan-qi-python/</loc>
     
     <lastmod>2022-09-30T02:10:56.821Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhuhaoxlj.github.io/2022/09/30/pythno-pa-chong-jiao-cheng/</loc>
-    
-    <lastmod>2022-09-30T02:10:26.280Z</lastmod>
     
   </url>
   
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>https://zhuhaoxlj.github.io/categories/index.html</loc>
+    <loc>https://zhuhaoxlj.github.io/archives/index.html</loc>
     
     <lastmod>2022-08-11T13:19:39.357Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhuhaoxlj.github.io/archives/index.html</loc>
+    <loc>https://zhuhaoxlj.github.io/categories/index.html</loc>
     
     <lastmod>2022-08-11T13:19:39.357Z</lastmod>
     
