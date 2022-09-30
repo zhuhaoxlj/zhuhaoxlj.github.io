@@ -47,7 +47,7 @@
       
         <tags>
             
-            <tag> python </tag>
+            <tag> Python </tag>
             
             <tag> 树莓派 </tag>
             
@@ -98,7 +98,7 @@
       
       <categories>
           
-          <category> adb </category>
+          <category> Adb </category>
           
       </categories>
       
@@ -107,7 +107,7 @@
             
             <tag> Android </tag>
             
-            <tag> adb </tag>
+            <tag> Adb </tag>
             
         </tags>
       
@@ -134,9 +134,9 @@
             
             <tag> Android </tag>
             
-            <tag> adb </tag>
-            
             <tag> Scrcpy </tag>
+            
+            <tag> Adb </tag>
             
             <tag> 投屏 </tag>
             
