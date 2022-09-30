@@ -501,7 +501,7 @@
 <p><a href="https://member.bilibili.com/platform/upload-manager/article" target="_blank" rel="noopener">https://member.bilibili.com/platform/upload-manager/article</a></p>
 <h2 id="网址分析"><a href="#网址分析" class="headerlink" title="网址分析"></a>网址分析</h2><p>首先用chrome打开网站，然后按F12打开调试窗口，点击network标签页，然后再次刷新网页</p>
 <p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209300057128.png" alt="image-20220930005732975"></p>
-<h4 id="1-首先分析出该网站的请求头"><a href="#1-首先分析出该网站的请求头" class="headerlink" title="1.首先分析出该网站的请求头"></a>1.首先分析出该网站的请求头</h4><p>根据左侧现实的内容，按ctrl+f对网页请求到的数据进行检索关键字，推荐检索数字、英文，一般数字英文不会进行编码，汉字可能进行二次编码了。</p>
+<h3 id="1-首先分析出该网站的请求头"><a href="#1-首先分析出该网站的请求头" class="headerlink" title="1.首先分析出该网站的请求头"></a>1.首先分析出该网站的请求头</h3><p>根据左侧现实的内容，按ctrl+f对网页请求到的数据进行检索关键字，推荐检索数字、英文，一般数字英文不会进行编码，汉字可能进行二次编码了。</p>
 <p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209300100467.png" alt="image-20220930010038407"></p>
 <p>点击搜索可以看到对应的搜索结果，点开搜索结果，点击headers标签页，然后可以看到下方有request headers这个就是浏览器向服务器请求网页时用到的请求头。</p>
 <p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209300104532.png" alt="image-20220930010202275"></p>
@@ -525,12 +525,13 @@
 
     header_dict <span class="token operator">=</span> eval<span class="token punctuation">(</span>header_dict<span class="token punctuation">)</span>
     <span class="token keyword">return</span> header_dict<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="2-分析请求的主机地址"><a href="#2-分析请求的主机地址" class="headerlink" title="2.分析请求的主机地址"></a>2.分析请求的主机地址</h4><p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209300108524.png" alt="image-20220930010804488"></p>
-<h4 id="3-分析响应头"><a href="#3-分析响应头" class="headerlink" title="3.分析响应头"></a>3.分析响应头</h4><p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209300109609.png" alt="image-20220930010900575"></p>
+<h3 id="2-分析请求的主机地址"><a href="#2-分析请求的主机地址" class="headerlink" title="2.分析请求的主机地址"></a>2.分析请求的主机地址</h3><p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209300108524.png" alt="image-20220930010804488"></p>
+<h3 id="3-分析响应头"><a href="#3-分析响应头" class="headerlink" title="3.分析响应头"></a>3.分析响应头</h3><p><img src="https://markgosling.oss-cn-beijing.aliyuncs.com/img/202209300109609.png" alt="image-20220930010900575"></p>
 <p>这里的内容编码格式使用了br编码，python爬虫获取到的数据可能是乱码，这里需要导入</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> brotli
 response <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token operator">=</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span><span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="4-这样就可以得到服务器发送过来的json数据了"><a href="#4-这样就可以得到服务器发送过来的json数据了" class="headerlink" title="4.这样就可以得到服务器发送过来的json数据了"></a>4.这样就可以得到服务器发送过来的json数据了</h4>
+<h2 id="获取网页数据并解析"><a href="#获取网页数据并解析" class="headerlink" title="获取网页数据并解析"></a>获取网页数据并解析</h2><p>通过request.get().json()获取主机发来的json数据解析即可。</p>
+
                 
             </div>
             <hr/>
